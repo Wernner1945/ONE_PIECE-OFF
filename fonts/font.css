@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url(quicksand/Quicksand_Bold.otf)format('truetype');
+}
+@font-face {
+    font-family: 'lemon';
+    src: url(lemon_fruit/Lemon\ Fruit.otf)format('truetype');
+}
+
+@font-face {
+    font-family: 'soulmeh';
+    src: url(soulmeh/Soulmeh.otf)format('truetype');
+}
+@font-face {
+    font-family: 'garet';
+    src: url(garet/Garet-Book.otf)format('truetype');
+}
+@font-face {
+    font-family: 'cafe';
+    src: url(cafe/Louis\ George\ Cafe.ttf)format('truetype');
+}

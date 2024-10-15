@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+img{
+    width: 100px;
+}
+.header, .main, .footer{
+    box-sizing: border-box;
+    width: 100%;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    background: #8E2DE2; 
+    background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  
+    background: linear-gradient(to top, #4A00E0, #8E2DE2);
+    font-family: sans-serif; /*cambiar*/
+}
+.nav__logo, .nav__option{
+    flex-grow: 1;
+}
+.nav__option{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav__logo img{
+    width: 140px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 3px #00f);
+}
+
+.nav__list{
+    padding: 0;
+}
+.list__item{
+    display: inline-block;
+    margin: 0px 15px;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    padding: 6px 5px;
+    box-sizing: border-box;
+    transition: background;
+    transition-duration: 0.3s;
+}
+.list__item a{
+    text-decoration: none;
+    padding: 5px 7px;
+    letter-spacing: 0.6px;
+    color: #eee;
+    font-family: quicksand;
+    font-size: 1.1em;
+}
+.list__item:hover{
+    background-color: #000e;
+    
+}
+#image-portada{
+    filter: drop-shadow(1pc 1pc 5px #000);
+}
+
+
+.list__item-1{
+    background-color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: none;
+}
+.list__item-1:hover{
+    transform:rotateX(360deg);
+    transition: 1s;
+}
+#inicio{
+    color: #eee;
+    box-sizing: border-box;
+}
+
+
+.main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.portada{
+    background-color: #eee;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+.imagen__portada, .title{
+    flex-grow: 1;
+}
+.imagen__portada{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.imagen__portada img{
+    width: 300px;
+}
+
+.title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.title h1{
+    color: #000;
+    font-size: 5em;
+    letter-spacing: 2.5px;
+    font-family: soulmeh;
+    
+
+
+}
+
+.section-1{
+    text-align: center;
+    font-family:cafe ;
+}
+.section-1 h2:hover{
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+
+.section-2 h2:hover{
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.section-3 h2:hover{
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.section-1 h2, .section-2 h2, .section-3 h2, .footer-1 .contactos .contactos__title h2{
+    text-align: center;
+    margin: 0;
+    color: #000;
+    box-shadow: 0px 0px 10px 2px #000;
+    padding: 15px 30px;
+    background-color: yellow;
+    border-radius:15px;
+    letter-spacing: 1.5px;
+    border: none;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: lemon;
+    font-size: 1.7em;
+}
+.title-redes-sociales{
+    text-align: center;
+    margin: 10px 0px;
+    color: #000;
+    box-shadow: 0px 0px 10px 2px #000;
+    background-color: yellow;
+    border-radius:15px;
+    letter-spacing: 1.5px;
+    border: none;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0;
+    margin-left: 40px;
+    
+    font-family: lemon;
+    font-size: 1.1em;
+}
+.title-redes-sociales h2{
+    margin: 0;
+    padding: 15px 30px;
+}
+.section-1 p{
+    text-align: justify;
+    margin: 15px 40px;
+    box-shadow: 6px 6px 6px #000;
+    padding: 13px;
+    background-color: #4A00E0;
+    border: none;
+    border-radius: 9px;
+    color: #eee;
+    font-size: 1.2em;
+    
+}
+
+.section-2{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #4A00E0;
+    background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.section-2 h2{
+    margin: 15px 0px;
+}
+.conteiner-img{
+    display: flex;
+    margin:  auto;
+    margin-bottom: 20px;
+    width: 900px;
+    height: 430px;
+
+}
+.conteiner-img img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.conteiner-img img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.section-3{
+    text-align: center;
+    margin-top: 55px;
+}
+.section-3 iframe{
+    margin: 15px auto;
+    width: 900px;
+    height: 480px;
+}
+
+.footer{
+    margin-top: auto;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    background: #200122; 
+    background: -webkit-linear-gradient(to top, #6f0000, #200122); 
+    background: linear-gradient(to top, #6f0000, #200122); 
+
+}
+.contactos, .redes-sociales{
+    flex-grow: 1;
+}
+.footer-1{
+    display: flex;
+    margin: 30px 0px;
+}
+
+.footer-1 .contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contactos__title{
+    margin: 10px 0px;
+}
+.conteiner-contactos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+
+}
+.contactos-item{
+    width: 200px;
+    height: 100px;
+    margin: 5px 0px;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #fff;
+    font-weight: bold;
+    font-family:cafe ;
+    
+}
+
+.list__redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+    font-family:cafe ;
+}
+.list__redes .list__item{
+    margin: 0;
+}
+.list__redes .list__item img{
+    width: 35px;
+}
+#twitter{
+    width: 53px;
+}
+.redes-sociales{
+    text-align: center;
+
+}
+.list__redes .list__item p{
+    margin: 0;
+    color: #eee;
+}
+
+
+
+.footer-2{
+    color: #eee;
+    background-color: #000;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: garet;
+
+}
